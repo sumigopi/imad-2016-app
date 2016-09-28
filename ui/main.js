@@ -13,9 +13,9 @@ var img = document.getElementById ("Praveen");
 
 var marginLeft = 0;
 function moveRight() {
-    marginLeft = MarginLeft + 1;
-    img.style.marginLeft = marginLeft + 'px'
+    marginLeft = marginLeft + 1;
+    img.style.marginLeft = marginLeft + 'px';
     }
     img.onclick = function() {
-        var intervel = setIntervel(moveRight, 50)
+        var intervel = setIntervel(moveRight, 50);
     }
