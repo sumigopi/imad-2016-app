@@ -4,7 +4,9 @@ alert("Hi! I am here");
 var element = document.getElementById("main-text");
 
 element.innerHTML = "New Value"
-var image = document.getelementById ("Praveen");
+
+//Move the image
+var image = document.getElementById ("Praveen");
 img.onclick = function() {
     img.style.marginLeft ="100px";
 }
