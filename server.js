@@ -5,6 +5,85 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var articleOne = {
+    title: "Article One | Gopi",
+    headingone: "Indian States",
+    headingtwo: "Southern Region",
+    date:"Sep 10,2016",
+    content:`
+   <p>There are six states in the southern region of India. This region is a peninsula, surrounded by Arabian Sea in the West, Bay of Bengal in the east and Indian ocean in the South.
+            The states are:
+        </p>
+        </div>
+        
+        <div>
+        <ol>
+            <li> Tamil Nadu </li>
+            <li> Kerala </li>
+            <li> Andhra Pradesh </li>
+            <li> Karnataka </li>
+            <li> Telengana </li>
+            <li> Goa </li>
+        </ol>` //Entire content not single or double qoutes. it is back quote. ` ~ symbol
+       
+       var articles = {
+           articleOne()
+           articleTwo()
+           articleThree()
+           
+       }
+       
+       
+      
+}
+function createTemplate(data) {
+    var title = data.title;
+    var date = datra.date;
+    var headingone = data.headingone;
+    var headingtwo = data.headingtwo;
+    var content = data.content;
+}
+var htmlTemplate = `<html>
+   <head>
+       <title> 
+            $(title)
+        </title>
+       <meta name ="viewport" content = "width=device-width, initial-scale=1"/>
+       <link href="/ui/style.css" rel="stylesheet" />
+   </head>
+   <body>
+        <div class = 'container'>
+            <div>
+                <a href = "/">Home</a>
+            </div>
+            <hr/>
+        <h1>
+        $(headingone)
+        </h1>
+        <div>
+        $(date)
+        </div>
+        
+        <div>
+            <h2> 
+       $(headingtwo)
+             </h2>
+        </div>
+        
+        <div>
+        $(content)
+        </div>
+      </div>
+    </body>
+</html>`;
+return htmlTemplate;
+
+}
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -16,7 +95,7 @@ app.get('/counter', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function (req, res) {
