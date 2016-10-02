@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+
+var articles = {
+   articleOne: {
     title: "Article One | Gopi",
     headingone: "Indian States",
     headingtwo: "Southern Region",
@@ -22,14 +24,44 @@ var articleOne = {
             <li> Telengana </li>
             <li> Goa </li>
         </ol>`
+   },
+   articleTwo:{
+    title: "Article One | Gopi",
+    headingone: "Indian States",
+    headingtwo: "Western Region",
+    date: "Sep 11, 2016",
+    content: `<p>There are six states in the western region of India.
     
-        
+            The states are:
+        </p>
+       
+        <ol>
+            <li> Goa </li>
+            <li> Maharashtra </li>
+            <li> Gujarath</li>
+            <li> Rajasthan </li>
+        </ol>`
+   },     
+  articleThree:{
+      
+    title: "Article One | Gopi",
+    headingone: "Indian States",
+    headingtwo: "Northern Region",
+    date: "Sep 12, 2016",
+    content: `<p>There are six states in the western region of India.
     
-           articleTwo()
-           articleThree()
+            The states are:
+        </p>
+       
+        <ol>
+            <li> Punjab </li>
+            <li> Haryana </li>
+            <li> J & K </li>
+            <li> Himachal Pradesh </li>
+            <li> Uttar Pradesh </li>
+        </ol>`
            
-       }
-
+}
 
 
 
