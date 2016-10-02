@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-   articleOne: {
+   'article-one': {
     title: "Article One | Gopi",
     headingone: "Indian States",
     headingtwo: "Southern Region",
@@ -25,7 +25,7 @@ var articles = {
             <li> Goa </li>
         </ol>`
    },
-   articleTwo:{
+   'article-two':{
     title: "Article One | Gopi",
     headingone: "Indian States",
     headingtwo: "Western Region",
@@ -42,7 +42,7 @@ var articles = {
             <li> Rajasthan </li>
         </ol>`
    },     
-  articleThree:{
+  'article-three':{
       
     title: "Article One | Gopi",
     headingone: "Indian States",
@@ -125,8 +125,11 @@ app.get('/counter', function (req, res) {
     res.send(counter.toString());
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+    //articleName = article-one
+    //articles(articleName)= content object of article-one
+    var articleName = req.perarms.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {
