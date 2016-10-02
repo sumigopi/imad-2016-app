@@ -5,19 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
 var articleOne = {
     title: "Article One | Gopi",
     headingone: "Indian States",
     headingtwo: "Southern Region",
-    date:"Sep 10,2016",
-    content:`
-   <p>There are six states in the southern region of India. This region is a peninsula, surrounded by Arabian Sea in the West, Bay of Bengal in the east and Indian ocean in the South.
+    date: "Sep 10, 2016",
+    content: `<p>There are six states in the southern region of India. This region is a peninsula, surrounded by Arabian Sea in the West, Bay of Bengal in the east and Indian ocean in the South.
             The states are:
         </p>
-        </div>
-        
-        <div>
+       
         <ol>
             <li> Tamil Nadu </li>
             <li> Kerala </li>
@@ -25,21 +21,24 @@ var articleOne = {
             <li> Karnataka </li>
             <li> Telengana </li>
             <li> Goa </li>
-        </ol>` //Entire content not single or double qoutes. it is back quote. ` ~ symbol
-       
-       var articles = {
-           articleOne()
+        </ol>`
+    
+        
+    
            articleTwo()
            articleThree()
            
        }
+
+
+
+
        
-       
-      
+     
 }
 function createTemplate(data) {
     var title = data.title;
-    var date = datra.date;
+    var date = data.date;
     var headingone = data.headingone;
     var headingtwo = data.headingtwo;
     var content = data.content;
