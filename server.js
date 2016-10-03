@@ -110,7 +110,7 @@ var htmlTemplate = `<html>
 </html>`;
 return htmlTemplate;
 
-}
+
 
 
 
