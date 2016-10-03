@@ -26,7 +26,7 @@ var articles = {
         </ol>`
    },
    'article-two':{
-    title: "Article One | Gopi",
+    title: "Article Two | Gopi",
     headingone: "Indian States",
     headingtwo: "Western Region",
     date: "Sep 11, 2016",
@@ -44,11 +44,11 @@ var articles = {
    },     
   'article-three':{
       
-    title: "Article One | Gopi",
+    title: "Article Three | Gopi",
     headingone: "Indian States",
     headingtwo: "Northern Region",
     date: "Sep 12, 2016",
-    content: `<p>There are six states in the western region of India.
+    content: `<p>There are six states in the northern region of India.
     
             The states are:
         </p>
