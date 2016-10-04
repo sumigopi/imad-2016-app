@@ -74,8 +74,8 @@ function createTemplate(data) {
     var headingone = data.headingone;
     var headingtwo = data.headingtwo;
     var content = data.content;
-}
-var htmlTemplate = `<html>
+
+    var htmlTemplate = `<html>
    <head>
        <title> 
             $(title)
@@ -109,7 +109,7 @@ var htmlTemplate = `<html>
     </body>
 </html>`;
 return htmlTemplate;
-
+}
 
 
 app.get('/', function (req, res) {
