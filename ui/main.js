@@ -20,7 +20,7 @@ function moveRight() {
         var interval = setInterval(moveRight, 50);
     }
 //counter code
-var button = document.getElementById("counter");
+/*var button = document.getElementById("counter");
 
 button.onclick = function() {
     
@@ -64,4 +64,4 @@ request.send("null");
       
   }
   
-}
+}*/
