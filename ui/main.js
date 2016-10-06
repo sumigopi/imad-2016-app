@@ -7,9 +7,9 @@ element.innerHTML = "New Value"
 
 //Move the image
 var img = document.getElementById ("Praveen");
-img.onclick = function() {
+/*img.onclick = function() {
     img.style.marginLeft ="100px";
-}
+}*/
 
 var marginLeft = 0;
 function moveRight() {
