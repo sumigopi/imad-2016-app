@@ -5,9 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/article-six', function (req, res) {
-  res.send("I am fine");
-});
+
 
 var articles = {
    'article-one': {
@@ -125,9 +123,6 @@ app.get('/counter', function (req, res) {
     res.send(counter.toString());
 });
 
-app.get('/article-four', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-four.html'));
-});
 
 app.get('/:articleName', function (req, res) {
     //articleName = article-one
