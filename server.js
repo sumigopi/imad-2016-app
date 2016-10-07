@@ -127,7 +127,7 @@ app.get('/counter', function (req, res) {
 app.get('/:articleName', function (req, res) {
     //articleName = article-one
     //articles(articleName)= content object of article-one
-    var articleName = req.perarms.articleName;
+    var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
 
@@ -147,7 +147,7 @@ app.get('/ui/main.js', function (req, res) {
 var names = [];
 app.get('/submit-name/name', function(req, res) {
     //get the name from the request
-    var name = req.perarms.name;
+    var name = req.params.name;
     
    names.push(name);
     //JSON Javascript Object Notation
