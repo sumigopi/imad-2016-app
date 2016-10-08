@@ -52,9 +52,11 @@ request.send("null");
       //Capture a list of names and render it as a list
      var names = ["Name1","Name2","Name3","Name4"]; 
      var list = " ";
-     for(var i=0; i<=names.length; i++) {
+     for(var i=0; i<names.length; i++) {
          list += "<li>" + names[i] + "</li>";
      }
+     
+  }
       
      var ul = document.getElementById("nameList");
      ul.innerHTML = list;
@@ -64,4 +66,3 @@ request.send("null");
       
   }
   
-}
