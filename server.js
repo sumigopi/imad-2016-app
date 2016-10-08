@@ -75,7 +75,7 @@ function createTemplate(data) {
     var htmlTemplate = `<html>
    <head>
        <title> 
-            $(title)
+            ${title}
         </title>
        <meta name ="viewport" content = "width=device-width, initial-scale=1"/>
        <link href="/ui/style.css" rel="stylesheet" />
@@ -87,7 +87,7 @@ function createTemplate(data) {
             </div>
             <hr/>
         <h1>
-        $(headingone)
+        ${headingone}
         </h1>
         <div>
         $(date)
@@ -95,12 +95,12 @@ function createTemplate(data) {
         
         <div>
             <h2> 
-       $(headingtwo)
+       ${headingtwo}
              </h2>
         </div>
         
         <div>
-        $(content)
+        ${content}
         </div>
       </div>
     </body>
