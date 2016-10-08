@@ -123,11 +123,11 @@ app.get('/:articleName', function (req, res) {
 
 
 
-/*var counter = 0;
+ counter = 0;
 app.get('/counter', function (req, res) {
     counter = counter+1;
     res.send(counter.toString());
-});*/
+});
 
 
 
@@ -145,7 +145,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-/*var names = [];
+var names = [];
 app.get('/submit-name/name', function(req, res) {
     //get the name from the request
     var name = req.params.name;
@@ -154,7 +154,7 @@ app.get('/submit-name/name', function(req, res) {
     //JSON Javascript Object Notation
     
     res.send(JSON.stringify(names));
-});*/
+});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
