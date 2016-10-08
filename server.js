@@ -90,7 +90,7 @@ function createTemplate(data) {
         ${headingone}
         </h1>
         <div>
-        $(date)
+        ${date}
         </div>
         
         <div>
