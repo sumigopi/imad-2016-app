@@ -11,7 +11,7 @@ var img = document.getElementById ("Praveen");
     img.style.marginLeft ="100px";
 }*/
 
-/*var marginLeft = 0;
+var marginLeft = 0;
 function moveRight() {
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
