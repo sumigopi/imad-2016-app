@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-   'article-one': {
+   "article-one": {
     title: "Article One | Gopi",
     headingone: "Indian States",
     headingtwo: "Southern Region",
@@ -26,7 +26,7 @@ var articles = {
             <li> Goa </li>
         </ol>`
    },
-   'article-two':{
+   "article-two":{
     title: "Article Two | Gopi",
     headingone: "Indian States",
     headingtwo: "Western Region",
@@ -43,7 +43,7 @@ var articles = {
             <li> Rajasthan </li>
         </ol>`
    },     
-  'article-three':{
+  "article-three":{
       
     title: "Article Three | Gopi",
     headingone: "Indian States",
