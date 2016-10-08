@@ -1,4 +1,4 @@
-/*console.log('Loaded!');
+console.log('Loaded!');
 alert("Hi! I am here");
 //To change the exixting text
 var element = document.getElementById("main-text");
@@ -18,7 +18,8 @@ function moveRight() {
     }
     img.onclick = function() {
         var interval = setInterval(moveRight, 50);
-    }*/
+    }
+   /* Commenting here
 //counter code
 var button = document.getElementById("counter");
 
@@ -60,9 +61,8 @@ request.send("null");
       
      var ul = document.getElementById("nameList");
      ul.innerHTML = list;
+     
       
       
-      
-      
-  }
+  } */
   
