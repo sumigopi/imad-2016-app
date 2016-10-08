@@ -1,17 +1,18 @@
-console.log('Loaded!');
+//CODE FOR CHANGING TEXT TO NEW VALUE AND MOVING IMAGE IS COMMENTED
+/*console.log('Loaded!');
 alert("Hi! I am here");
 //To change the exixting text
 var element = document.getElementById("main-text");
 
-element.innerHTML = "New Value"
+element.innerHTML = "New Value"  */
 
 //Move the image
 var img = document.getElementById ("Praveen");
-/*img.onclick = function() {
-    img.style.marginLeft ="100px";
-}*/
+//img.onclick = function() {
+   // img.style.marginLeft ="100px";
+//}
 
-var marginLeft = 0;
+/*var marginLeft = 0;
 function moveRight() {
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
@@ -19,7 +20,8 @@ function moveRight() {
     img.onclick = function() {
         var interval = setInterval(moveRight, 50);
     }
-   /* Commenting here
+    */
+   
 //counter code
 var button = document.getElementById("counter");
 
@@ -64,5 +66,5 @@ request.send("null");
      
       
       
-  } */
+  } 
   
