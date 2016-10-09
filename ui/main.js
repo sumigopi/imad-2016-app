@@ -6,13 +6,16 @@ var element = document.getElementById("main-text");
 
 element.innerHTML = "New Value"  */
 
-//Move the image
-var img = document.getElementById ("Praveen");
+//Move the image once
+//var img = document.getElementById ("Praveen");
 //img.onclick = function() {
    // img.style.marginLeft ="100px";
 //}
 
-/*var marginLeft = 0;
+//Move the image continuously
+/*
+var img = document.getElementById ("Praveen");
+var marginLeft = 0;
 function moveRight() {
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
