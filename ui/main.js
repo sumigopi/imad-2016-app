@@ -65,7 +65,7 @@ request.send("null");
      
   
       
-     var ul = document.getElementById("nameList");
+     var ul = document.getElementById("namelist");
      ul.innerHTML = list;
      
       
