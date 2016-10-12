@@ -51,7 +51,7 @@ request.open("GET","http://sumigopi.imad.hasura-app.io/counter",true);
 request.send("null");
 };
   //Submit Name
-  var nameInput =document.getElementById("names");
+  var nameInput =document.getElementById("name");
   var name = nameInput.value;
   var submit = document.getElementById("submit_btn");
   submit.onclick = function(){
