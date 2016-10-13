@@ -125,6 +125,15 @@ app.get('/submit-name/:name', function(req, res) {
     //get the name from the request
     var name = req.params.name;
     
+ /*   
+   var names = [];
+app.get('/submit-name/:name', function(req, res) {
+    //get the name from the request
+    var name = req.params.name; 
+  */  
+    
+    
+    
    names.push(names);
     //JSON Javascript Object Notation
     
