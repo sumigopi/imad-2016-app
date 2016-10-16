@@ -112,7 +112,11 @@ return htmlTemplate;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+  });
+  
+ app.get('/sai', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'sai.html'));
+  }); 
 
  counter = 0;
 app.get('/counter', function (req, res) {
