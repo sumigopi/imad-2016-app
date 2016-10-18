@@ -50,10 +50,11 @@ onclick="document.getElementById('time').innerHTML = Date()">
         And miles to go before I sleep.
     </p>
    
-   
-  <img id = "praveen" style="position:absolute; TOP:75px; LEFT:1200px; WIDTH:100px; HEIGHT:100px" src="ui/praveen.jpg"/>
+   <p id = "praveen" style="display:none">
+  <img  style ="position:absolute; TOP:75px; LEFT:1200px; WIDTH:100px; HEIGHT:100px" src="ui/praveen.jpg"/>
+  </p>
   <button type="button"
-onclick="document.getElementById('praveen').innerHTML = Date()">
+onclick="document.getElementById('praveen').style.display='block'">
 <span color = blue ></span>Click for Praveen.</button>
   
   <hr/>
