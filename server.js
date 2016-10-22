@@ -166,8 +166,8 @@ app.get('/ui/PavithraRaghav.JPG', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'GK.JPG'));
 });
 
- app.get('/ui/Pavith.JPG', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Pavith.JPG'));
+ app.get('/ui/Pavith.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Pavith.jpg'));
 });
 
 app.get('/ui/main.js', function (req, res) {
