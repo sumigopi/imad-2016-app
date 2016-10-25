@@ -83,7 +83,7 @@ onclick="document.getElementById('time').innerHTML = Date()">
         onclick="document.getElementById('praveen').style.display='block'">
         <span style = "color:blue" >Click for Praveen.</span></button>  
     
-    <script>
+    <!--<script>
         alert("Enter any of the name Pavithra, Praveen, Gk or PavithraRaghav")
         var name;
             var photo = function(image) {
@@ -94,16 +94,23 @@ onclick="document.getElementById('time').innerHTML = Date()">
             return document.getElementById("Option") = photo(name);
             
         }
-    </script>
+    </script> -->
     
     <p id = "Option" style="display:none">
          <img  style ="position:absolute; TOP:75px; LEFT:600px; WIDTH:100px; HEIGHT:100px" />
     </p>
  
-    <button type="button" style ="position:absolute; TOP:200px; LEFT:600px">
-        photo(name)
-        <span style = "color:blue" >Click Here.</span></button>  
-
+    <button id ="btn" type="button" style ="position:absolute; TOP:200px; LEFT:600px"
+        onclick="fetchFunction()">
+        <span style = "color:blue" >Click Here</span></button>  
+       <script>
+        function fetchFunction() {
+            var img style ="position:absolute; TOP:75px; LEFT:600px; WIDTH:100px; HEIGHT:100px" new Image();
+            img.src = "ui/Praveen.jpg"
+           document.getElementById("btn")= img_home.appendChild(img);
+        
+        }
+    </script> 
     <p>
       When God is in His Heaven <br>
       All is right with the World!
