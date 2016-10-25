@@ -76,7 +76,7 @@ onclick="document.getElementById('time').innerHTML = Date()">
         <span style = "color:blue" >Click for Pavithra.</span></button> 
    
     <p id = "praveen" style="display:none">
-         <img id = "prav" style ="position:absolute; TOP:75px; LEFT:1200px; WIDTH:100px; HEIGHT:100px" src="ui/Praveen.jpg"/>
+         <img  style ="position:absolute; TOP:75px; LEFT:1200px; WIDTH:100px; HEIGHT:100px" src="ui/Praveen.jpg"/>
     </p>
  
     <button type="button" style ="position:absolute; TOP:200px; LEFT:1200px"
@@ -189,6 +189,9 @@ onclick="document.getElementById('time').innerHTML = Date()">
      <option value="opel">Opel</option>
      <option value="audi">Audi</option>
     </select>
-    <img  style = "height:50px; weight:50px" src = "ui/Praveen.jpg"/>
+    <img id ="prav" style = "height:50px; weight:50px" src = "ui/Praveen.jpg"/>
+    <script>
+        var myimgobj = document.images["prav"]
+    </script>
 </body>
 </html>
