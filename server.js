@@ -167,7 +167,7 @@ app.get('/ui/PavithraRaghav.JPG', function (req, res) {
 });
 
  app.get('/ui/Pavithra.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Pavith.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'Pavithra.jpg'));
 });
 
 app.get('/ui/main.js', function (req, res) {
