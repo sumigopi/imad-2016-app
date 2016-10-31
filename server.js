@@ -4,8 +4,21 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var pool = new Pool(config);
 
-
+app.get('/test-db', function (req, res) {
+    //Make a SELECT request
+    //Make a response with the results
+    pool.query("SELECT * FROM test", function(err, result) {
+        if (err) {
+            res.status(500).send(err.toString());
+            } else {
+            res.send(JASON.toStringify(result.rows))
+            }
+        }
+    })
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  });
 
  var articles = {
    "article-one": {
