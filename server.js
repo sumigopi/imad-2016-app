@@ -1,6 +1,15 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var pool = require('pg').Pool;
+var config = {
+    user:"sumigopi",
+    database: "sumigopi",
+    host:db.imad.hasura-app.io,
+    port:'5432',
+    password: process.env.DB_PASSWORD
+    }
+
 
 var app = express();
 app.use(morgan('combined'));
@@ -15,10 +24,10 @@ app.get('/test-db', function (req, res) {
             } else {
             res.send(JASON.toStringify(result.rows))
             }
-        }
-    })
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-  });
+        });
+
+    });
+ 
 
  var articles = {
    "article-one": {
