@@ -43,7 +43,7 @@ button.onclick = function() {
                span.innerHTML = counter.toString();
            }
        }
-   } 
+   }; 
     
     
     // Make the request
@@ -75,7 +75,7 @@ request.send("null");
      ul.innerHTML = list;
            }
        }
-   } 
+   }; 
     
         // Make the request
  var nameInput =document.getElementById("name");
