@@ -196,5 +196,13 @@ function myFunction() {
    document.getElementById("btn")
 }
 </script>
+<script>
+    var image = document.images[0];
+var downloadingImage = new Image();
+downloadingImage.onload = function(){
+    image.src = this.src;   
+};
+downloadingImage.src = "http://an.image/to/aynchrounously/download.jpg";
+</script>
 </body>
 </html>
