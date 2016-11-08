@@ -163,7 +163,7 @@ app.get('/submit-name', function(req, res) { //submit-name?name=xxxx
     
     res.send(JSON.stringify(names));
 });
-/*
+
 app.get('/articles/:articleName', function (req, res) {
     //articleName = article-one etc
     //articles(articleName)= content object of article-one
@@ -182,7 +182,7 @@ app.get('/articles/:articleName', function (req, res) {
               });
             });
  
-*/
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
