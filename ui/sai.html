@@ -53,7 +53,7 @@ onclick="document.getElementById('time').innerHTML = Date()">
     </p>
     
     <p id = "pavith" style="display:none">
-        <img  style ="position:absolute; TOP:75px; LEFT:750px; WIDTH:100px; HEIGHT:100px" src="ui/Pavithra.jpg"/>
+        <img id="id1" style ="position:absolute; TOP:75px; LEFT:750px; WIDTH:100px; HEIGHT:100px" src="ui/Pavithra.jpg"/>
     </p>
     
     <button type="button" style ="position:absolute; TOP:200px; LEFT:750px"
@@ -61,7 +61,7 @@ onclick="document.getElementById('time').innerHTML = Date()">
         <span style = "color:blue">Click for Pavith.</span></button> 
     
     <p id = "gk" style="display:none">
-        <img  style ="position:absolute; TOP:75px; LEFT:900px; WIDTH:100px; HEIGHT:100px" src="ui/GK.JPG"/>
+        <img id="id2" style ="position:absolute; TOP:75px; LEFT:900px; WIDTH:100px; HEIGHT:100px" src="ui/GK.JPG"/>
     </p>
  
     <button type="button" style ="position:absolute; TOP:200px; LEFT:900px"
@@ -69,7 +69,7 @@ onclick="document.getElementById('time').innerHTML = Date()">
         <span style = "color:blue"  >Click for GK.</span></button> 
     
     <p id = "pavithra" style="display:none">
-        <img id  style ="position:absolute; TOP:75px; LEFT:1050px; WIDTH:100px; HEIGHT:100px" src="ui/PavithraRaghav.JPG"/>
+        <img id="id3"  style ="position:absolute; TOP:75px; LEFT:1050px; WIDTH:100px; HEIGHT:100px" src="ui/PavithraRaghav.JPG"/>
     </p>
   
    <button type="button" style ="position:absolute; TOP:200px; LEFT:1050px"
@@ -77,7 +77,7 @@ onclick="document.getElementById('time').innerHTML = Date()">
         <span style = "color:blue" >Click for Pavithra.</span></button> 
    
     <p id = "praveen" style="display:none">
-         <img  style ="position:absolute; TOP:75px; LEFT:1200px; WIDTH:100px; HEIGHT:100px" src="ui/Praveen.jpg"/>
+         <img id="id4" style ="position:absolute; TOP:75px; LEFT:1200px; WIDTH:100px; HEIGHT:100px" src="ui/Praveen.jpg"/>
     </p>
  
     <button type="button" style ="position:absolute; TOP:200px; LEFT:1200px"
@@ -197,12 +197,40 @@ function myFunction() {
 }
 </script>
 <script>
-    var image = document.images[0];
-var downloadingImage = new Image();
-downloadingImage.onload = function(){
-    image.src = this.src;   
-};
-downloadingImage.src = "http://an.image/to/aynchrounously/download.jpg";
-</script>
+    <form style ="position:absolute; TOP:75px; LEFT:600px;WIDTH:100px; HEIGHT:100px"; color:Blue">
+        
+        <input id="In1" type = "text" name = "name" value = "Your Name"/>
+        alert(Enter values Pavith or GK or Parag or Prav)
+        var inp = document.getElementById("In1").value
+switch(inp)
+{
+case "Pavithra":imageOne();
+break;
+case "GK":imageTwo();
+break;
+case "Parag":imageThree();
+break;
+case "Prav":imageFour();
+break;
+}
+function imageOne() {
+ var x = document.getElementById("id1")
+ x.style.display="block"
+}
+function imageTwo() {
+ var x = document.getElementById("id2")
+ x.style.display="block"
+}
+function imageThree() {
+ var x = document.getElementById("id3")
+ x.style.display="block"
+}
+function imageFour() {
+ var x = document.getElementById("id4")
+ x.style.display="block"
+}
+
+ 
+ </script>
 </body>
 </html>
