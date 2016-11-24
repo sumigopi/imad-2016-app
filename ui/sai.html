@@ -52,6 +52,10 @@ onclick="document.getElementById('time').innerHTML = Date()">
         And miles to go before I sleep.
     </p>
     
+    <p id = "PEACOCK" style="display:none">
+        <img id="id5" style ="position:absolute; TOP:75px; LEFT:500px; WIDTH:100px; HEIGHT:100px" src="ui/Peacock.png"/>
+    </p>
+    
     <p id = "pavith" style="display:none">
         <img id="id1" style ="position:absolute; TOP:75px; LEFT:750px; WIDTH:100px; HEIGHT:100px" src="ui/Pavithra.jpg"/>
     </p>
@@ -202,10 +206,12 @@ function myFunction() {
         <input id="In1" type = "text" name = "name" value = "GK"/>
         </form>
     <script>
-        alert(Enter values Pavith or GK or Parag or Prav)
+        alert(Enter values Pavith or GK or Parag or Prav or PEACOCK)
         var inp = document.getElementById("In1").value
 switch(inp)
 {
+case "PEACOCK":imagefive();
+break;
 case "Pavithra":imageOne();
 break;
 case "GK":imageTwo();
@@ -230,6 +236,10 @@ function imageThree() {
 function imageFour() {
  var c = document.getElementById("id4")
  c.style.display="block"
+}
+function imageFive() {
+ var x = document.getElementById("id5")
+ x.style.display="block"
 }
 
  
