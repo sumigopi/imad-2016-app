@@ -185,9 +185,13 @@ onclick="document.getElementById('time').innerHTML = Date()">
         <input type = "text" name = "name" placeholder= "Your Name"/>
         <p>Comments:</p>
         <textarea name = "Comments" placeholder = "Comments" rows ="5" cols = "20">Comments </textarea>
-       
     </form>
+    
+    
+    
+    
     <h3  style ="position:absolute; TOP:365px; LEFT:1050px; color:Blue">Preferred Cars </h3>
+   
     <select style ="position:absolute; TOP:420px; LEFT:1050px; color:Blue">
      <option value="volvo">Volvo</option>
      <option value="saab">Saab</option>
@@ -204,10 +208,28 @@ function myFunction() {
 alert("Enter values Pavith or GK or Parag or Prav or PEACOCK")
 </script>
     <form style ="position:absolute; TOP:200px; LEFT:500px;WIDTH:100px; HEIGHT:100px">
+        <input type="text" id="In1" name = "iname" placeholder="name"/> 
+        <input type="submit" value="PEACOCK" id = "submit_batn"/> 
         
-        <input id="In1" type = "text" name = "name" value = "PEACOCK"/>
-        <input type="submit" value="Submit">
         </form>
+     <script>
+        var submitt = document.getElementById("submit_batn");
+  submitt.onclick = function(){
+     //Create request object
+   var request = new XMLHttpRequest();
+    
+    //Capture the response and store it in a variable
+   request.onreadystatechange = function() {
+       if (request.readyState === XMLHttpRequest.DONE){
+           //Take some action
+           if(request.status === 200) {
+   
+      //Capture a list of names and render it as a list
+     var iname = request.responseText; 
+    iname = JSON.parse(iname);
+    </script>
+       
+        
     <script>
         
         var inp = document.getElementById("In1").value
