@@ -208,7 +208,7 @@ function myFunction() {
 alert("Enter values Pavith or GK or Parag or Prav or PEACOCK")
 </script>
     <form style ="position:absolute; TOP:200px; LEFT:500px;WIDTH:100px; HEIGHT:100px">
-        <input type="text" id="In1" name = "iname" placeholder="name"/> 
+        <input type="text" id="In1"  placeholder="name"/> 
         <input type="submit" value="Submit" id = "submit_batn"/> 
         
         </form>
@@ -225,11 +225,11 @@ alert("Enter values Pavith or GK or Parag or Prav or PEACOCK")
            if(request.status === 200) {
    
       //Capture a list of names and render it as a list
-     var iname = request.responseText; 
-    iname = JSON.parse(iname);
+     var In1 = request.responseText; 
+   In1 = JSON.parse(In1);
     
      var nameInput =document.getElementById("In1");
-  var name = nameInput.value;        
+  var In1 = nameInput.value;        
 request.open("GET","http://sumigopi.imad.hasura-app.io/sai?name=" + name,true);
 request.send("null");  
   }; 
