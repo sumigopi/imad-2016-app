@@ -137,8 +137,15 @@ app.get('/', function (req, res) {
   });
   
  app.get('/sai', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'sai.html'));
-  }); 
+  var iname = req.query.iname; 
+  
+    
+   iname.push(iname);
+    //JSON Javascript Object Notation
+    
+    res.send(JSON.stringify(iname));
+});
+
 
  counter = 0;
 app.get('/counter', function (req, res) {
