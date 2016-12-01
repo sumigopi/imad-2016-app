@@ -227,6 +227,13 @@ alert("Enter values Pavith or GK or Parag or Prav or PEACOCK")
       //Capture a list of names and render it as a list
      var iname = request.responseText; 
     iname = JSON.parse(iname);
+    
+     var nameInput =document.getElementById("In1");
+  var name = nameInput.value;        
+request.open("GET","http://sumigopi.imad.hasura-app.io/sai?name=" + name,true);
+request.send("null");  
+  }; 
+  
     </script>
       
        
