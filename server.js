@@ -137,12 +137,7 @@ app.get('/', function (req, res) {
   });
   
  app.get('/sai', function (req, res) {
-  var iname = req.query.In1; 
-  
-    
-  
-    
-    res.send(JSON.stringify(In1));
+ res.sendFile(path.join(__dirname, 'ui', 'sai.html'));
 });
 
 
