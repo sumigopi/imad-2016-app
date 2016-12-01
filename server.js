@@ -137,12 +137,12 @@ app.get('/', function (req, res) {
   });
   
  app.get('/sai', function (req, res) {
-  var iname = req.query.iname; 
+  var iname = req.query.In1; 
   
     
   
     
-    res.send(JSON.stringify(iname));
+    res.send(JSON.stringify(In1));
 });
 
 
