@@ -140,8 +140,7 @@ app.get('/', function (req, res) {
   var iname = req.query.iname; 
   
     
-   iname.push(iname);
-    //JSON Javascript Object Notation
+  
     
     res.send(JSON.stringify(iname));
 });
